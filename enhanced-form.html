@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enhanced HTML5 form with lists, tables, media, and accessibility features.">
+  <meta name="keywords" content="HTML5, form, accessibility, validation, media, table, list">
+  <meta name="author" content="Your Name">
+  <title>Enhanced HTML5 Form</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <p>This page demonstrates a variety of HTML5 elements including forms, lists, tables, and media.</p>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <!-- Lists Section -->
+    <section>
+      <h2>Things We Offer</h2>
+      <ul>
+        <li>Web Development Services</li>
+        <li>Data Analytics Solutions</li>
+        <li>SEO Optimization</li>
+      </ul>
+
+      <h3>Key Features:</h3>
+      <ol>
+        <li>Accessibility-friendly design</li>
+        <li>Responsive layout</li>
+        <li>HTML5 form validation</li>
+      </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Our Pricing</h2>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Basic</th>
+            <th>Premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>$500</td>
+            <td>$1200</td>
+          </tr>
+          <tr>
+            <td>Data Analytics</td>
+            <td>$300</td>
+            <td>$800</td>
+          </tr>
+          <tr>
+            <td>SEO Optimization</td>
+            <td>$200</td>
+            <td>$500</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+      <h2>Our Team</h2>
+      <figure>
+        <img src="team.jpg" alt="Our team at work" width="400" height="250">
+        <figcaption>Our dedicated team collaborating on projects.</figcaption>
+      </figure>
+
+      <h3>Introduction Video</h3>
+      <video src="intro.mp4" controls width="400">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Background Music</h3>
+      <audio src="background.mp3" controls>
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Us</h2>
+      <form action="#" method="post" aria-label="Contact Form">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email">
+          <br><br>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+251-9XX-XXXXXX" pattern="[+0-9]{10,15}" required>
+          <br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+          <br><br>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>Newsletter Subscription:</label>
+          <input type="checkbox" id="subscribe" name="subscribe" checked>
+          <label for="subscribe">Subscribe to our newsletter</label>
+          <br><br>
+
+          <label for="contact-method">Preferred Contact Method:</label>
+          <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-phone" name="contact-method" value="phone">
+          <label for="contact-phone">Phone</label>
+          <br><br>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          <br><br>
+
+          <label for="referral" readonly>How did you hear about us?</label>
+          <input type="text" id="referral" name="referral" value="Online search" readonly>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Company. All rights reserved.</p>
+  </footer>
+</body>
+</html>
